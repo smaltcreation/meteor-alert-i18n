@@ -1,0 +1,57 @@
+// Package's translations are divided in 4 parts standing for the type
+// See getType() function in alert-i18n.js
+//
+// It's an OPTIONAL convention if you don't want to specify the type in options
+//
+// It's also useful when you've two similar keys for different events.
+// Example : "error.not-connected" & "info.not-connected"
+//
+// CONTRIBUTIONS ARE HIGHLY RECOMMENDED FOR PUSHING THIS PACKAGE TO A NEXT LEVEL OF TRANSLATIONS
+{
+  "error": {
+    "bad-request": {
+      "title": "Invalid request",
+      "text": "Your request is invalid."
+    },
+    "default": {
+      "title": "Error",
+      "text": "An unknown error occurred."
+    },
+    "invalid-email": {
+      "title": "Invalid email address",
+      "text": "This eamil is invalid or already used"
+    },
+    "invalid-credentials": {
+      "title": "Invalid credentials",
+      "text": "Email or password are invalid."
+    },
+    "invalid-phone-number": {
+      "title": "Invalid phone number",
+      "text": "This phone number is invalid."
+    },
+    "not-authorized": {
+      "title": "Access denied",
+      "text": "You are not allowed to make this action."
+    },
+    "not-connected": {
+      "title": "You are not connected",
+      "text": "Login in to make this action"
+    },
+    "not-found": {
+      "title": "Error 404",
+      "text": "We are sorry, the element you are looking for does not exist."
+    }
+  },
+  "info": {
+    "not-connected": {
+      "title": "You are not connected",
+      "text": "Login in for way more possibilities"
+    }
+  },
+  "success": {
+    "transaction": {
+      "title": "Transaction succeed !",
+      "text": "Your transaction went well, no error occurred."
+    }
+  }
+}
