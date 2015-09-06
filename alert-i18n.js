@@ -1,10 +1,9 @@
 Alert = {
     open: function (input, options) {
-        // Default key
-        var prefix  = 'error.';
-        var title   = prefix + 'default.title';
-        var text    = prefix + 'default.text';
-        var type    = 'error';
+        var prefix;
+        var title;
+        var text;
+        var type;
 
         // Getting keys
         if (!_.isUndefined(input) && isError(input)) {
@@ -18,6 +17,11 @@ Alert = {
             type    = getType(input);
             title   = input + '.title';
             text    = input + '.text';
+        } else {
+            prefix  = 'error.';
+            title   = prefix + 'default.title';
+            text    = prefix + 'default.text';
+            type    = 'error';
         }
 
         // Forging data object
@@ -47,5 +51,5 @@ function getType (input) {
         type = null;
     }
 
-    return type
+    return type;
 }
