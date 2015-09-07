@@ -17,7 +17,7 @@ Package.onUse(function(api) {
         'templating'
     ], 'client');
     api.use([
-        'tap:i18n@1.0.7'
+        'tap:i18n@1.5.1'
     ], ['client', 'server']);
     api.addFiles([
         'package-tap.i18n',
