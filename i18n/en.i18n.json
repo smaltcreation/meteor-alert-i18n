@@ -1,0 +1,54 @@
+{
+  "error": {
+    "bad-request": {
+      "title": "Invalid request",
+      "text": "Your request is invalid."
+    },
+    "default": {
+      "title": "Error",
+      "text": "An unknown error occurred."
+    },
+    "invalid-email": {
+      "title": "Invalid email address",
+      "text": "This eamil is invalid or already used"
+    },
+    "invalid-credentials": {
+      "title": "Invalid credentials",
+      "text": "Email or password are invalid."
+    },
+    "invalid-phone-number": {
+      "title": "Invalid phone number",
+      "text": "This phone number is invalid."
+    },
+    "not-authorized": {
+      "title": "Access denied",
+      "text": "You are not allowed to make this action."
+    },
+    "not-connected": {
+      "title": "You are not connected",
+      "text": "Login in to make this action"
+    },
+    "not-found": {
+      "title": "Error 404",
+      "text": "We are sorry, the element you are looking for does not exist."
+    }
+  },
+  "info": {
+    "not-connected": {
+      "title": "You are not connected",
+      "text": "Login in for way more possibilities"
+    }
+  },
+  "success": {
+    "transaction": {
+      "title": "Transaction succeed !",
+      "text": "Your transaction went well, no error occurred."
+    }
+  },
+  "warning": {
+    "delete-file": {
+      "title": "Are you sure?",
+      "text": "You are about to delete this file!"
+    }
+  }
+}

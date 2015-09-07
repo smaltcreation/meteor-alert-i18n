@@ -1,0 +1,54 @@
+{
+  "error": {
+    "bad-request": {
+      "title": "Requête invalide",
+      "text": "Votre requête est invalide."
+    },
+    "default": {
+      "title": "Erreur",
+      "text": "Une erreur est survenue."
+    },
+    "invalid-email": {
+      "title": "Adresse email invalide",
+      "text": "L'adresse email que vous avez saisie est déjà utilisée ou invalide."
+    },
+    "invalid-credentials": {
+      "title": "Identifiants invalides",
+      "text": "L'adresse email ou le mot de passe que vous avez saisis sont invalides."
+    },
+    "invalid-phone-number": {
+      "title": "Numéro de téléphone invalide",
+      "text": "Le numéro de téléphone que vous avez entré est incorrect."
+    },
+    "not-authorized": {
+      "title": "Accès refusé",
+      "text": "Vous n'êtes pas autorisé a effectuer cette action."
+    },
+    "not-connected": {
+      "title": "Vous n'êtes pas connecté",
+      "text": "Connectez-vous pour effectuer cette action."
+    },
+    "not-found": {
+      "title": "Erreur 404",
+      "text": "Nous sommes désolé, l'élément que vous recherchez n'existe pas."
+    }
+  },
+  "info": {
+    "not-connected": {
+      "title": "Vous n'êtes pas connecté",
+      "text": "Identifiez-vous pour plus de possibilités."
+    }
+  },
+  "success": {
+    "transaction": {
+      "title": "Transaction effectuée avec succès !",
+      "text": "Votre transaction s'est bien déroulée, aucune erreur n'est survenue."
+    }
+  },
+  "warning": {
+    "delete-file": {
+      "title": "Êtes-vous sûr ?",
+      "text": "Attention, vous êtes sur le point de supprimer ce fichier !"
+    }
+  }
+}
