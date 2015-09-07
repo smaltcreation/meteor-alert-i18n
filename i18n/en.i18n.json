@@ -1,12 +1,3 @@
-// Package's translations are divided in 4 parts standing for the type
-// See getType() function in alert-i18n.js
-//
-// It's an OPTIONAL convention if you don't want to specify the type in options
-//
-// It's also useful when you've two similar keys for different events.
-// Example : "error.not-connected" & "info.not-connected"
-//
-// CONTRIBUTIONS ARE HIGHLY RECOMMENDED FOR PUSHING THIS PACKAGE TO A NEXT LEVEL OF TRANSLATIONS
 {
   "error": {
     "bad-request": {

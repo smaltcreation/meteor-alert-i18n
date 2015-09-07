@@ -1,7 +1,7 @@
 # meteor-alert-i18n
 Display an adapted SweetAlert for i18n translations.
 ``` console
-meteor add smaltcreation:paypal-rest-api
+meteor add smaltcreation:alert-i18n
 ```
 
 ## Usage
