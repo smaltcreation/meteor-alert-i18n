@@ -1,35 +1,12 @@
 Alert = {
     open: function (input, options) {
-        var prefix;
-        var title;
-        var text;
-        var type;
-
-        // Getting keys
-        if (!_.isUndefined(input) && isError(input)) {
-            prefix  = 'error.';
-            type    = 'error';
-            input   = input.error;
-            title   = prefix + input + '.title';
-            text    = prefix + input + '.text';
-        } else if (!_.isUndefined(input) && _.isString(input)) {
-            prefix  = null;
-            type    = getType(input);
-            title   = input + '.title';
-            text    = input + '.text';
-        } else {
-            prefix  = 'error.';
-            title   = prefix + 'default.title';
-            text    = prefix + 'default.text';
-            type    = 'error';
+        // Adapting Error object
+        if (isError(input)) {
+            input = 'error.' + input.error;
         }
 
-        // Forging data object
-        var data = {
-            title:  title   === __(title)   ? input : __(title),
-            text:   text    === __(text)    ? null  : __(text),
-            type:   type
-        };
+        // Getting key & forging data object
+        var data = getData(input);
 
         // Extending from the options
         if (!_.isUndefined(options)) {
@@ -41,15 +18,41 @@ Alert = {
     }
 };
 
-function isError (input) {
-    return _.isObject(input) && _.has(input, 'error');
-}
+isError = function  (input) {
+    return !_.isUndefined(input) && _.isObject(input) && _.has(input, 'error');
+};
 
-function getType (input) {
+getType = function (input) {
     var type = _.isString(input) ? _.first(input.split('.')) : null;
     if (!type || (type !== 'error' && type !== 'info' && type !== 'success' && type !== 'warning')) {
         type = null;
     }
 
     return type;
-}
+};
+
+getData = function (input) {
+    var title;
+    var text;
+    var type;
+
+    if (!_.isUndefined(input) && _.isString(input)) {
+        var key = {
+            title:  input + '.title',
+            text:   input + '.text'
+        };
+        title   = key.title === __(key.title) ? input : __(key.title);
+        text    = key.text  === __(key.text)  ? null  : __(key.text);
+        type    = getType(input);
+    }  else {
+        title   = __('error.default.title');
+        text    = __('error.default.text');
+        type    = 'error';
+    }
+
+    return {
+        title: title,
+        text: text,
+        type: type
+    };
+};
