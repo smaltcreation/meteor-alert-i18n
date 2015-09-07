@@ -53,5 +53,11 @@
       "title": "Transaction effectuée avec succès !",
       "text": "Votre transaction s'est bien déroulée, aucune erreur n'est survenue."
     }
+  },
+  "warning": {
+    "delete-file": {
+      "title": "Êtes-vous sûr ?",
+      "text": "Attention, vous êtes sur le point de supprimer ce fichier !"
+    }
   }
 }
