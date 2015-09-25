@@ -1,14 +1,13 @@
 Package.describe({
     name: 'smaltcreation:alert-i18n',
-    version: '0.0.1',
+    version: '0.0.2',
     summary: 'Display an adapted SweetAlert for i18n translations.',
     git: 'https://github.com/SmaltCreation/meteor-alert-i18n.git',
     documentation: 'README.md'
 });
 
 Npm.depends({
-    'underscore': '1.8.3',
-    'sweetalert': '1.1.0'
+    'underscore': '1.8.3'
 });
 
 Package.onUse(function(api) {
@@ -17,7 +16,8 @@ Package.onUse(function(api) {
         'templating'
     ], 'client');
     api.use([
-        'tap:i18n@1.5.1'
+        'tap:i18n@1.5.1',
+        'kevohagan:sweetalert@1.0.0'
     ], ['client', 'server']);
     api.addFiles([
         'package-tap.i18n',
