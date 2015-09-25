@@ -1,6 +1,6 @@
 Package.describe({
     name: 'smaltcreation:alert-i18n',
-    version: '0.0.2',
+    version: '0.0.3',
     summary: 'Display an adapted SweetAlert for i18n translations.',
     git: 'https://github.com/SmaltCreation/meteor-alert-i18n.git',
     documentation: 'README.md'
