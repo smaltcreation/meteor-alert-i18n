@@ -1,3 +1,5 @@
+var __ = TAPi18n.__;
+
 Alert = {
     open: function (input, options) {
         // Adapting Error object
